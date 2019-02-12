@@ -1,0 +1,216 @@
+html {
+    background-image: url("../assets/music.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.mainBody {
+    grid-template-rows: 1fr 4fr;
+    padding-top: 5em;
+    row-gap: 1em;
+    text-align: center;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    column-gap: 2px;
+    row-gap: 2px;
+    align-content: start;
+    padding-top: 5px;
+}
+nav{
+    justify-content: center;
+    align-items: center;
+}
+.songContainer {
+    padding: 3px;
+    min-width: 200px;
+    background-color: transparent;
+    border: 2px solid rgb(193, 190, 203);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(30px, auto);
+    row-gap: 3px;
+    column-gap: 2px;
+    grid-template-areas:
+        "t1 t1"
+        "sl sl"
+        "volume bpm"
+        "start stop";
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+}
+
+.controlContainer {
+    justify-content: center;
+    align-items: center;
+}
+
+.addContainer {
+    display: block;
+    min-width: 150px;
+    background-color: transparent;
+    border: 2px solid rgb(193, 190, 203);
+    border-radius: 10px;
+    font-size: 6em;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+    transition: .5s;
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+
+}
+
+.addContainer:hover {
+    color: #f39c12;
+}
+
+.addButton {
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.addContainer .tooltiptext {
+    visibility: hidden;
+    background-color: #000000;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+}
+
+.addContainer:hover .tooltiptext {
+    visibility: visible;
+}
+
+.songTitle {
+    grid-area: t1;
+    font-size: 1.5em;
+    color: whitesmoke;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.instrumentSelect {
+    grid-area: sl;
+}
+
+.songVolume {
+    grid-area: volume;
+}
+
+.songBpm {
+    grid-area: bpm;
+}
+
+.songStart {
+    grid-area: start;
+}
+
+.songStop {
+    grid-area: stop;
+}
+
+
+.select {
+    position: relative;
+    display: block;
+    /* background:#D5D5D5; */
+    background: #000025;
+    height: 40px;
+    overflow: hidden;
+    border-radius: .3em;
+}
+
+.select select {
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    /* background:#D5D5D5; */
+    background: #000025;
+    background-image: none;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0 0 0 .5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #000025;
+    pointer-events: none;
+}
+
+.select::after {
+    transition: .25s all ease;
+}
+
+.text_input {
+    position: relative;
+}
+
+.text_input input:focus {
+    outline: none;
+}
+
+.text_input input {
+    width: 100%;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    outline: 0;
+    border: 0;
+    padding: 5px 5px 5px;
+    transition: 0.2s;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.text_input input~.focus-border:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #f39c12;
+    transition: 0.3s;
+}
+
+.text_input input~.focus-border:after {
+    top: auto;
+    bottom: 0;
+    left: auto;
+    right: 0;
+}
+
+
+.text_input input:focus~.focus-border:after {
+    width: 100%;
+    transition: 0.3s;
+}

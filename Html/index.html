@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cardo" rel="stylesheet">
+    <link rel="stylesheet" href="../Css/index.css">
+    <link rel="stylesheet" href="../Css/navmenu.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="round_menu" class="main_menu">
+        <a class="main_button" onclick="openMenu()"><i class="fa fa-list"></i></a>
+
+        <div class="item_list">
+            <a href="./index.html" class="menu_item fa fa-home"></a>
+            <a href="./mixer.html" class="menu_item fa fa-play"></a>
+            <a href="./concert.html" class="menu_item fa fa-music"></a>
+            <a id="trigger" class="menu_item fa fa-sign-in-alt"></a>
+            <a id="logOut" class="menu_item fa fa-sign-out-alt"></a>
+        </div>
+    </div>
+
+    <div class="login_modal" id="login_modal">
+        <div class="login_modal_content">
+            <span class="login_modal_close" id="login_modal_close"><i class="far fa-times-circle"></i></span>
+            <div class="form_container">
+                <form class="login_form" id="sign_in" itemscope itemtype="http://schema.org/Person">
+                    <input id="email_login" type="email" placeholder="Email" autocomplete="username" itemscope itemtype="http://schema.org/email" />
+                    <input id="password_login" type="password" placeholder="Password" autocomplete="current-password" temscope itemtype="http://schema.org/accessCode" />
+                    <button id="logIn">Log In</button>
+                    <p id="login_error"></p>
+                    <p class="form_extra" id="log_button">Not registered? <a href="#">Create an account</a></p>
+
+                </form>
+                <form class="register_form" id="sign_up" itemscope itemtype="http://schema.org/Person">
+                    <input type="email" id="email_signin" placeholder="Email" autocomplete="username" itemscope itemtype="http://schema.org/email" />
+                    <input type="password" id="password_signin" placeholder="Password" autocomplete="new-password" temscope itemtype="http://schema.org/accessCode" />
+                    <input type="password" id="password_signin_repeat" placeholder="Repeat Password" autocomplete="new-password" temscope itemtype="http://schema.org/accessCode" />
+                    <button type="submit" id="signIn" itemscope="http://schema.org/RegisterAction">Sign Up</button>
+                    <p id="signin_error"></p>
+                    <p class="form_extra" id="register_button">Already registered? <a href="#">Sign In</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="slogan">
+        <h1>Start making your own music</h1>
+        <h1> <a href="./mixer.html">🎹</a></h1>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.8.2/firebase-firestore.js"></script>
+    <script>
+        var config = {
+            apiKey: "AIzaSyDyvj4-wgxg-uGOwsxQ3OX1EWsUdH7XSJ0",
+            authDomain: "miorc-c154e.firebaseapp.com",
+            databaseURL: "https://miorc-c154e.firebaseio.com",
+            projectId: "miorc-c154e",
+            storageBucket: "miorc-c154e.appspot.com",
+            messagingSenderId: "1049532323452"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="../Js/index.js"></script>
+</body>
+
+
+</html>

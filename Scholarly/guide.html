@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Miorc scholarly</title>
+    <link rel="stylesheet" href="scholarly.css">
+</head>
+
+<body>
+    <article resource="#" typeof="schema:ScholarlyArticle">
+        <header>
+            <h1 property="schema:name">Miorc</h1>
+            <h2 role="doc-subtitle" property="schema:alternateName">Midi orchestra</h2>
+        </header>
+        <meta property="schema:accessibilityFeature" content="alternativeText">
+
+        <section typeof="sa:AuthorsList">
+            <h2 itemtype="http://schema.org/title">Author</h2>
+
+
+            <li typeof="sa:ContributorRole" property="schema:author">
+                <span typeof="schema:Person">
+                    <meta property="schema:givenName" content="Ionut">
+                    <meta property="schema:additionalGivenName" content="Iulian">
+                    <meta property="schema:familyName" content="Bleoju">
+                    <span property="schema:name">Ionut-Bogdan Bleoju</span>
+                </span>
+                <a href="#sf" property="sa:roleAffiliation" resource="https://www.info.uaic.ro/bin/Main/">Student
+                    @Faculty of computer science</a>
+                <ul>
+                    <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                        <a href="mailto:ionutyop@gmail.com" property="schema:email">Mail @Ionut</a>
+                    </li>
+
+                </ul>
+
+        </section>
+
+        <section typeof="sa:Affiliations">
+            <h2 itemtype="http://schema.org/title">Affiliations</h2>
+            <ul>
+                <li id="sa">
+                    <span typeof="schema:Organization" resource="https://science.ai/">
+                        <span property="schema:name">Faculty of computer science</span>,
+                        <span property="schema:parentOrganization">
+                            <span typeof="schema:Organization">
+                                <span property="schema:name">"Alexandru Ioan Cuza" University of Iași</span>
+                                —
+                                <span property="schema:location" typeof="schema:Place">
+                                    <span property="schema:address" typeof="schema:PostalAddress">
+                                        <span property="schema:addressLocality">Iași</span>,
+                                        <span property="schema:addressRegion">Iași</span>,
+                                        <span property="schema:addressCountry">România</span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </li>
+            </ul>
+        </section>
+
+        <section typeof="sa:Concepts">
+            <h2 itemtype="http://schema.org/title">Concepts</h2>
+            <section typeof="schema:SoftwareSourceCode">
+                <h3 itemtype="http://schema.org/title">What is
+                    <cite property="schema:name">
+                        <a href="https://en.wikipedia.org/wiki/MIDI">MIDI</a>
+                    </cite></h3>
+
+                <ul>
+
+
+                    <li itemtype="http://schema.org/ListItem">
+                        <p itemtype="http://schema.org/description">MIDI (short for Musical Instrument
+                            Digital Interface) is a technical standard that describes a communications protocol,
+                            digital interface, and electrical connectors that connect a wide variety of electronic
+                            musical instruments, computers, and related audio devices. A single MIDI link can
+                            carry up to sixteen channels of information, each of which can be routed to a separate
+                            device. <br><br>
+
+                            MIDI carries event messages that specify notation, pitch, velocity, vibrato, panning,
+                            and clock signals (which set tempo). For example, a MIDI keyboard or other controller
+                            might trigger a sound module to generate sound produced by a keyboard amplifier. MIDI
+                            data can be transferred via midi cable, or recorded to a sequencer to be edited or
+                            played back. <br><br>
+
+                            A file format that stores and exchanges the data is also defined. Advantages of MIDI
+                            include small file size, ease of modification and manipulation and a wide choice of
+                            electronic instruments and synthesizer or digitally-sampled sounds. <br>
+                    </li>
+                </ul>
+            </section>
+
+            <section typeof="sa:Concepts">
+                <h2 itemtype="http://schema.org/title">About the application</h2>
+                <section typeof="schema:SoftwareSourceCode">
+                    <h3 itemtype="http://schema.org/title">What is
+                        <cite property="schema:name">
+                            <a href="https://en.wikipedia.org/wiki/Orchestration">MIORC</a>
+                        </cite></h3>
+
+                    <ul>
+                        <li itemtype="http://schema.org/ListItem">
+                            <p itemtype="http://schema.org/description">
+                                MIORC is a web application that allows you to create an online
+                                <span property="https://schema.org/MusicGroup">orchestra</span> <br>
+                                You can chose from a list of over 70
+                                <span property="http://schema.org/instrument">instruments</span>
+                                and create your own
+                                <span property="http://schema.org/track">composition.</span> <br>
+                                After you've created your <span property="http://schema.org/track">song</span> you can
+                                start forming an
+                                <span property="https://schema.org/MusicGroup">orchestra</span> , with your
+                                composition and many others written by other
+                                <span property=" http://schema.org/performer"> players </span> .
+                        </li>
+                    </ul>
+                </section>
+                <section typeof="schema:SoftwareSourceCode">
+                    <h3 itemtype="http://schema.org/title">How to use
+                        <cite property="schema:name">
+                            <a href="https://en.wikipedia.org/wiki/Orchestration">MIORC</a>
+                        </cite></h3>
+
+                    <ul>
+                        <li itemtype="http://schema.org/ListItem">
+                            <p itemtype="http://schema.org/description">
+                                The application has 2 main pages:
+                                <ul>
+                                    <li itemtype="http://schema.org/ListItem">The mixer page
+                                        <p itemtype="http://schema.org/description">Here you will compose your songs</p>
+                                    <li itemtype="http://schema.org/ListItem">
+                                        <h3 itemtype="http://schema.org/title">Mixer Structure</h3>
+                                        <h4 itemtype="http://schema.org/title">A basic description of the page</h4>
+                                        <figure typeof="sa:Image">
+                                            <img src="./mixer1.png" alt="mixer-page">
+                                            <figcaption>Mixer page</figcaption>
+                                        </figure>
+                                        <p itemtype="http://schema.org/description">Here you will see 3 main components</p>
+                                        <ul>
+                                            <li itemtype="http://schema.org/ListItem">
+                                                <h4 itemtype="http://schema.org/title">Navigation menu</h4>
+                                                <figure typeof="sa:Image">
+                                                    <img src="./main_menu_in.png" alt="navigation-menu">
+                                                    <figcaption>Main menu closed</figcaption>
+                                                    <p itemtype="http://schema.org/description">The menu which will
+                                                        help you navigate through the application . By clicking it ,
+                                                        the menu will expand </p>
+                                                </figure>
+                                                <figure typeof="sa:Image">
+                                                    <img src="./main_menu_out.png" alt="navigation-menu">
+                                                    <figcaption>Main menu open</figcaption>
+                                                    <p itemtype="http://schema.org/description">
+                                                        By opening it you will see 4 buttons (ATM)
+                                                        <ul>
+                                                            <li itemtype="http://schema.org/ListItem">1-Home button -
+                                                                will take you back to the main page</li>
+                                                            <li itemtype="http://schema.org/ListItem">2-Mixer button -
+                                                                will take you to the mixer page</li>
+                                                            <li itemtype="http://schema.org/ListItem">3-Conductor
+                                                                button - will take you back to the orchestra page</li>
+                                                            <li itemtype="http://schema.org/ListItem">4-Log-out/Log-in
+                                                                - will allow you to login/logout</li>
+                                                        </ul>
+                                                    </p>
+                                                </figure>
+                                            </li>
+                                            <li itemtype="http://schema.org/ListItem">
+                                                <h4 itemtype="http://schema.org/title">Mixer controls</h4>
+                                                <figure typeof="sa:Image">
+                                                    <img src="./mixer_controls.png" alt="mixer-menu">
+                                                    <figcaption>Mixer main controls</figcaption>
+                                                    <p itemtype="http://schema.org/description">Those will help you to
+                                                        interact with your song. Here you will see 6 controls</p>
+                                                    <ul>
+                                                        <li itemtype="http://schema.org/ListItem">1-Play button - want
+                                                            to hear how your
+                                                            <span itemtype=" http://schema.org/MusicComposition">song</span>
+                                                            sound , just
+                                                            <span itemtype="http://schema.org/Action"> click</span>
+                                                            it
+                                                        </li>
+                                                        <li itemtype="http://schema.org/ListItem">2-Save button - will
+                                                            save your song to our server</li>
+                                                        <li itemtype="http://schema.org/ListItem">3-Song name - the
+                                                            name which your song will be saved by</li>
+                                                        <li itemtype="http://schema.org/ListItem">4-BPM - play is to
+                                                            slow , rise the BPM ( Max of 10)</li>
+                                                        <li itemtype="http://schema.org/ListItem">5-Instruments - bored
+                                                            of the old piano try a new funky
+                                                            <span itemprop itemtype="http://schema.org/instrument">instrument</span>
+                                                        </li>
+                                                        <li itemtype="http://schema.org/ListItem">
+                                                            6- List with all your old compositions , feel you could've
+                                                            done better? just load it up and edit it.
+                                                        </li>
+                                                    </ul>
+                                                </figure>
+                                            </li>
+                                            <li itemtype="http://schema.org/ListItem">
+                                                <h4 itemtype="http://schema.org/title">Note sheet</h4>
+                                                <figure typeof="sa:Image">
+                                                    <img src="./mixer_notes.png" alt="note-sheet">
+                                                    <figcaption>Note sheet</figcaption>
+                                                    <p itemtype="http://schema.org/description">The main actor of this
+                                                        play. Here you can chose your notes
+                                                        <ul>
+                                                            <li itemtype="http://schema.org/ListItem">First you will
+                                                                see the squares , each represents a note , by clicking
+                                                                it you cant listen the note , dont like it just click
+                                                                it
+                                                                again</li>
+                                                            <li itemtype="http://schema.org/ListItem">As you can see
+                                                                the sheet is pretty small , what about that ? If you
+                                                                want to make it bigger it's simple add a note (square
+                                                                with a
+                                                                * symbol) on the last columns and <b>BAM</b> more notes
+                                                                to add </li>
+                                                        </ul>
+                                                        <figure typeof="sa:Image">
+                                                            <img src="./mixer_notes_on.png" alt="note-sheet">
+                                                            <figcaption>Note sheet expanded</figcaption>
+                                                        </figure>
+                                                </figure>
+                                            </li>
+                                        </ul>
+                                    </li>
+                        </li>
+                        <li itemtype="http://schema.org/ListItem">The Concert page
+                            <p itemtype="http://schema.org/description">Here you will mix all the song you want</p>
+                        <li itemtype="http://schema.org/ListItem">
+                            <h3 itemtype="http://schema.org/title">Concert Structure</h3>
+                            <h4 itemtype="http://schema.org/title">A basic description of the Concert page</h4>
+                            <figure typeof="sa:Image">
+                                <img src="./concert.png" alt="Concert-page">
+                                <figcaption>Concert page</figcaption>
+                            </figure>
+                            <p itemtype="http://schema.org/description">Here you will see 2 components</p>
+                            <ul>
+                                <li itemtype="http://schema.org/ListItem">
+                                    <h4 itemtype="http://schema.org/title">Main controls</h4>
+                                    <figure typeof="sa:Image">
+                                        <img src="./controls.png" alt="controls">
+                                        <figcaption>Controls</figcaption>
+                                        <p itemtype="http://schema.org/description">The 3 controls which will help you
+                                            use the application <br>
+                                            Components:
+                                        </p>
+
+                                        <ul>
+                                            <li itemtype="http://schema.org/ListItem">1-Start button -
+                                                will play/pause all the active songs</li>
+                                            <li itemtype="http://schema.org/ListItem">2-Stop button -
+                                                will stop all playing songs</li>
+                                            <li itemtype="http://schema.org/ListItem">3-Add button
+                                                - will pop a select from which u can select a song from the database
+                                                <figure typeof="sa:Image">
+                                                    <img src="./addsong.png" alt="add-form">
+                                                    <figcaption>Song list</figcaption>
+                                                </figure>
+                                            </li>
+                                        </ul>
+                                    </figure>
+                                </li>
+                                <li itemtype="http://schema.org/ListItem">
+                                    <h4 itemtype="http://schema.org/title">Song card</h4>
+                                    <figure typeof="sa:Image">
+                                        <img src="./song.png" alt="song-card">
+                                        <figcaption>Song card</figcaption>
+                                        <p itemtype="http://schema.org/description">
+                                            Here u can: <br>
+                                            <ul>
+                                                <li itemtype="http://schema.org/ListItem">Play the song</li>
+                                                <li itemtype="http://schema.org/ListItem">Stop the song</li>
+                                                <li itemtype="http://schema.org/ListItem">Change the instrument which
+                                                    is used for the song
+                                                    <figure typeof="sa:Image">
+                                                        <img src="./change.png" alt="change-form">
+                                                        <figcaption>Instrument list</figcaption>
+                                                    </figure>
+                                                </li>
+                                            </ul>
+                                        </p>
+                                    </figure>
+                                </li>
+                        </li>
+                    </ul>
+                </section>
+            </section>
+
+
+
+
+</body>
+
+</html>
